@@ -10,6 +10,17 @@ botones.forEach(boton => {
             pantalla.textContent = '0';
             return;
         }
+        if (boton.id === 'por') {
+            pantalla.textContent += '*';
+            return;
+        }
+
+        {
+        if (boton.id === 'dividir') {
+            pantalla.textContent += ' /';
+            return;    
+        }
+       }
 
         if (boton.id === 'borrar') {
             if (pantalla.textContent.length === 1 || pantalla.textContent === 'ERROR') {
@@ -35,3 +46,4 @@ botones.forEach(boton => {
         }
     });
 });
+
